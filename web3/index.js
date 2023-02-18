@@ -50,7 +50,7 @@ async function connect() {
     walletconnect: {
       package: window.WalletConnectProvider.default,
       options: {
-        infuraId: "00000000000000000000000000000000",
+        infuraId: "e92e5029aceb4cc384ff65eb28ee2d6f",
       },
     },
   };
