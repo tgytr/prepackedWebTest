@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+    <div id="unity-container" style="width: 100%; height:100%">
+      <canvas id="unity-canvas" width=auto height=auto tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/prepackedWebGLtest13_chainsafe.loader.js";
+      var loaderUrl = buildUrl + "/prepackedWebGLtest22_chainsafe.loader.js";
       var config = {
-        dataUrl: buildUrl + "/prepackedWebGLtest13_chainsafe.data",
-        frameworkUrl: buildUrl + "/prepackedWebGLtest13_chainsafe.framework.js",
-        codeUrl: buildUrl + "/prepackedWebGLtest13_chainsafe.wasm",
+        dataUrl: buildUrl + "/prepackedWebGLtest22_chainsafe.data",
+        frameworkUrl: buildUrl + "/prepackedWebGLtest22_chainsafe.framework.js",
+        codeUrl: buildUrl + "/prepackedWebGLtest22_chainsafe.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Prepacked",
@@ -83,8 +83,9 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
       loadingBar.style.display = "block";
 
