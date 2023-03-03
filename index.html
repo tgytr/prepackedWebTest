@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/prepackedWebGLtest22_chainsafe.loader.js";
+      var loaderUrl = buildUrl + "/prepackedWebGLtest23_player_movement.loader.js";
       var config = {
-        dataUrl: buildUrl + "/prepackedWebGLtest22_chainsafe.data",
-        frameworkUrl: buildUrl + "/prepackedWebGLtest22_chainsafe.framework.js",
-        codeUrl: buildUrl + "/prepackedWebGLtest22_chainsafe.wasm",
+        dataUrl: buildUrl + "/prepackedWebGLtest23_player_movement.data",
+        frameworkUrl: buildUrl + "/prepackedWebGLtest23_player_movement.framework.js",
+        codeUrl: buildUrl + "/prepackedWebGLtest23_player_movement.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Prepacked",
@@ -84,6 +84,7 @@
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+
         canvas.style.width = "100%";
         canvas.style.height = "100%";
       }
